@@ -29,3 +29,8 @@ docker run --rm \
        --user $(id -u):$(id -g) \
        pandoc/extra test.md -o test.tex --write=latex --template agi --listings
 ```
+
+
+
+Fehlende Pakete:
+- textpos
