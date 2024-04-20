@@ -7,7 +7,6 @@ keywords: [Markdown, Example]
 titlepage: true
 numbersections: true
 documentclass: scrartcl
-titlepage-logo: kanton_sw
 
 toc: true
 toc-own-page: true

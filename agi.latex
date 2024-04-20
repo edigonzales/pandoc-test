@@ -310,10 +310,12 @@ $else$
 \usepackage[margin=2.5cm,includehead=true,includefoot=true,centering,$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
 $endif$
-$if(titlepage-logo)$
+
+%%$if(titlepage-logo)$
 \usepackage[export]{adjustbox}
 \usepackage{graphicx}
-$endif$
+%%$endif$
+
 $if(beamer)$
 \newif\ifbibliography
 $endif$
@@ -611,6 +613,10 @@ $endif$
 $if(titlepage)$
 \usepackage{pagecolor}
 \usepackage{afterpage}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
 $if(titlepage-background)$
 \usepackage{tikz}
 $endif$
