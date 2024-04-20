@@ -994,7 +994,7 @@ $if(titlepage)$
 \noindent {\huge \textbf{\textsf{$title$}}}
 $if(subtitle)$
 \vskip 1em
-{\Large {$subtitle$}}
+{\huge {$subtitle$}}
 \vskip 1em
 $endif$
 

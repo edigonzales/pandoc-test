@@ -19,7 +19,7 @@ docker run --rm \
        --volume "$(pwd):/data" \
        --volume "$(pwd):/.pandoc" \
        --user $(id -u):$(id -g) \
-       pandoc/extra test.md -o test.pdf --template agi --listings --pdf-engine=xelatex
+       pandoc/extra test.md -o test.pdf --template agi --filter pandoc-xnos --listings --pdf-engine=xelatex
 ```
 
 ```
@@ -34,4 +34,5 @@ docker run --rm \
 
 Fehlende Pakete:
 - textpos
-- dateteime2
+- datetime2
+- pandoc-tablenos -> https://tex.stackexchange.com/questions/139106/referencing-tables-in-pandoc -> https://github.com/jradek/pandoc-docker/blob/master/latex_with_filters/Dockerfile
